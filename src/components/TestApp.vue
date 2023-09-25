@@ -1,5 +1,5 @@
 <template>
-<div class="test">
+<div class="testApp">
   <h2>初めてのコンポーネント</h2>
   <p>Ref Count:{{ count }}</p>
   <p>Reactive Count:{{ state.count }}</p>
@@ -27,6 +27,6 @@ const addReactiveCount = () => {
 };
 
 export default {
-  name: 'Test1'
+  name: 'TestApp'
 }
 </script>

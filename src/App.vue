@@ -2,18 +2,21 @@
   <div id="app">
     <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <Test1 />
+    <HelloWorld2 msg="Welcom to Your Vue.js 2 App" />
+    <!--<Test1 />-->
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld2 from './components/HelloWorld2.vue'
 //import Test1 from './components/Test.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld : HelloWorld
+    HelloWorld : HelloWorld,
+//    HelloWorld2 : HelloWorld2
 //    Test1 : Test1
   }
 }
