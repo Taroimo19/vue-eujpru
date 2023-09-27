@@ -3,7 +3,7 @@
     <hr />
     <h2>テスト用コンポーネント</h2>
     <div>
-      <button class="btn btn-primary">Test Button</button>
+      <button class="btn btn-primary" @click="countup">Test Button</button>
       <p>{{ num }}</p>
     </div>
   </div>
@@ -13,7 +13,12 @@
 export default{
   data:function() {
     return {
-      num: 10
+      num: 0
+    }
+  },
+  methods:{
+    countup() {
+      this.num++;
     }
   }
 }

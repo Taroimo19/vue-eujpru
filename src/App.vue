@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App" num=101 />
+    <HelloWorld msg="Welcome to Your Vue.js App" num="101" />
     <HelloWorld2 msg="Welcom to Your Vue.js 2 App"/>
     <Test1 />
     <Test2 />
@@ -19,7 +19,7 @@ export default {
   components: {
     HelloWorld,
 //    Test1,
-    Test2
+    Test2,
 //    HelloWorld2
   }
 }
