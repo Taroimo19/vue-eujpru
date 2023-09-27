@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ msg }} >> {{ num }}</h1>
+    <h2>ID : {{ id }}  NAME : {{ name }}</h2>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -10,10 +11,18 @@
 </template>
 
 <script>
+const myData = {
+  id: 202,
+  name: 'Taro'
+}
 export default {
   name: 'HelloWorld',
+  data(){
+    return myData
+  },
   props: {
-    msg: String
+    msg: String,
+    num: Number
   }
 }
 </script>
