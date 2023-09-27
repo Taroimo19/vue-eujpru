@@ -10,14 +10,14 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-//import HelloWorld2 from './components/HelloWorld2.vue'
-//import Test1 from './components/TestApp.vue'
+import HelloWorld2 from './components/HelloWorld2.vue'
+import Test1 from './components/TestApp.vue'
 import Test2 from './components/TestApp2.vue'
 
 export default {
   name: 'App',
   components: {
-//    HelloWorld,
+    HelloWorld,
 //    Test1,
     Test2
 //    HelloWorld2
