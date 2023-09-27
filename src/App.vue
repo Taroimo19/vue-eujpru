@@ -2,7 +2,6 @@
   <div id="app">
     <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App" num="333" />
-    <HW2 msg2="Welcom to Your Vue.js 2 App" />
     <Test1 />
     <Test2 />
   </div>
@@ -10,7 +9,6 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import HW2 from './components/HelloWorld2.vue'
 import Test1 from './components/TestApp.vue'
 import Test2 from './components/TestApp2.vue'
 
