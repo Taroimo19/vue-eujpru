@@ -3,7 +3,6 @@
     <img alt="Vue logo" src="https://vuejs.org/images/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <HelloWorld2 msg="Welcom to Your Vue.js 2 App" />
-    <!--<Test2 />-->
     <!--<Test1 />-->
   </div>
 </template>
@@ -17,10 +16,10 @@ import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld : HelloWorld,
-//    Test2 : Test2
-//    HelloWorld2 : HelloWorld2
-//    Test1 : Test1
+    HelloWorld,
+//    Test2
+//    HelloWorld2
+//    Test1
   }
 }
 </script>
