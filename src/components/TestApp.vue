@@ -1,49 +1,46 @@
 <template>
-<div class="test">
-  <h2>初めてのコンポーネント</h2>
-  <p>Ref Count:{{ count }}</p>
-  <!--
-  <p>Reactive Count:{{ state.count }}</p>
-  -->
-  <div>
-    <button @click="addRefCount">Ref Count+</button>
-  <!--
-    <button @click="addReactiveCount">Reactive Count+</button>
-  -->
-  </div>
+  <hr />
+  <div class="test">
+    <h2 class="red">初めてのコンポーネント</h2>
+    <p>Count:{{ tacount }}</p>
+    <p>Ref Count:{{ count }}</p>
+    <div>
+      <button @click="addCount">Count+</button>
+      <button @click="addRefCount">Ref Count+</button>
+      <button @click="clear">Clear</button>
+    </div>
   </div>
 </template>
 
-<script setup>
-//import { ref, reactive } from 'vue';
+<script>
+import { ref } from 'vue'
 
-//const count = ref(0);
-//const state = reactive({count: 1,});
-
-//const addRefCount = () => {
-//  count.value++;
-//};
-
-//const addReactiveCount = () => {
-//  state.count++;
-//};
+const count = ref(0);
 
 export default {
-//  name: 'TestApp',
   data:function() {
     return {
-//      conut: ref(0),
-      conut: 0,
-//      state: reactive({count: 1})
+      tacount: 0,
+      count : count,
     }
   },
   methods:{
     addRefCount(){
       this.count++;
-    };
-//    addReactiveCount(){
-//      state.count++;
-//    };
+    },
+    addCount(){
+      this.tacount++;
+    },
+    clear(){
+      this.count = ref(0);
+      this.tacount = 0;
+    }
   }
 }
 </script>
+
+<style>
+.red {
+  color: #f00;
+}
+</style>
