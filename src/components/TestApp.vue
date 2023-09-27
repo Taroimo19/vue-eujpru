@@ -1,5 +1,5 @@
 <template>
-<div class="testApp">
+<div class="test">
   <h2>初めてのコンポーネント</h2>
   <p>Ref Count:{{ count }}</p>
   <p>Reactive Count:{{ state.count }}</p>
