@@ -10,19 +10,18 @@
 </template>
 
 <script>
-export default{
-  data:function() {
+export default {
+  data: function () {
     return {
-      num: 0
-    }
+      num: 0,
+    };
   },
-  methods:{
+  methods: {
     countup() {
       this.num++;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
-<style>
-</style>
+<style scoped></style>

@@ -13,33 +13,33 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from 'vue';
 
 const count = ref(0);
 
 export default {
-  data:function() {
+  data: function () {
     return {
       tacount: 0,
-      count : count,
-    }
+      count: count,
+    };
   },
-  methods:{
-    addRefCount(){
+  methods: {
+    addRefCount() {
       this.count++;
     },
-    addCount(){
+    addCount() {
       this.tacount++;
     },
-    clear(){
+    clear() {
       this.count = ref(0);
       this.tacount = 0;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
-<style>
+<style scoped>
 .red {
   color: #f00;
 }
