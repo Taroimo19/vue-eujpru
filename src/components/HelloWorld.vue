@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <router-link to="/">Home<router-link>
-    <router-link to="/testApp3">Test3<router-link>
+    <router-link to="/testApp3">Test1<router-link>
     <h1>{{ msg }} >> {{ num }}</h1>
     <h2>ID : {{ id }}  NAME : {{ name }}</h2>
     <p>

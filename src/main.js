@@ -1,8 +1,8 @@
 const { createApp } = require('vue');
-import App from "./App.vue";
-import router from './router'
+import App from './App.vue';
+//import router from './router'
 
-createApp(App).mount("#app");
+createApp(App).mount('#app');
 
 // 定義
 // var init = () => {
